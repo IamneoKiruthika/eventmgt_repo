@@ -1,0 +1,13 @@
+runtime: nodejs18 # or a compatible version like nodejs14
+env: standard
+service: angularapp
+instance_class: F2
+
+handlers:
+- url: /
+  static_files: dist/angularapp/index.html
+  upload: dist/angularapp/index.html
+
+- url: /(.*)
+  static_files: dist/angularapp/\1
+  upload: dist/angularapp/(.*)
