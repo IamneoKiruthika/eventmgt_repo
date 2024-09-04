@@ -8,7 +8,7 @@ import { Event } from '../model/event.model';
 })
 export class EventService {
 
-  private baseUrl = 'https://8080-dbbfffafefccdac315598698bcaabaffaeeedone.premiumproject.examly.io';
+  private baseUrl = 'https://springapp-dot-cloudcourse6d798.uc.r.appspot.com';
 
   constructor(private http: HttpClient) { }
 
